@@ -1,4 +1,6 @@
 {
+  "projectId": "5hjrry",
+  "video": false,
   "component": {
     "testFiles": "**/__tests__/*.spec.tsx",
     "componentFolder": "src"
