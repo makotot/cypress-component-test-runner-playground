@@ -1,6 +1,5 @@
 {
   "projectId": "jkgyyb",
-  "video": true,
   "component": {
     "testFiles": "**/__tests__/*.spec.tsx",
     "componentFolder": "src"
