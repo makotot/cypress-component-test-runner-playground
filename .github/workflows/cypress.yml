@@ -1,0 +1,16 @@
+name: Cypress Test
+on: [push]
+jobs:
+  run:
+    runs-on: macos-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+
+      - name: Component test
+        uses: cypress-io/github-action@v2
+        with:
+          command: npm run run-ct
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
